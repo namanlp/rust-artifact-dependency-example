@@ -1,6 +1,8 @@
 #ifndef HELLO_H
 #define HELLO_H
 
-void say_hello();
+extern "C" {
+    void say_hello();
+}
 
 #endif

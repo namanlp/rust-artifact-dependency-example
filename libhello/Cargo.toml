@@ -3,5 +3,8 @@ name = "libhello"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+name = "libhello"
+
 [build-dependencies]
 cc = "1.0"  # To compile the C code

@@ -1,5 +1,10 @@
 pub fn add(left: u64, right: u64) -> u64 {
+    unsafe {say_hello();}
     left + right
+}
+
+unsafe extern "C" {
+    fn say_hello();
 }
 
 #[cfg(test)]
