@@ -7,4 +7,4 @@ edition = "2024"
 libhello = { path = "../libhello", artifact="bin", lib = true}
 
 [dependencies]
-libhello = { path = "../libhello"}
+libhello = { path = "../libhello", artifact="bin", lib = true}

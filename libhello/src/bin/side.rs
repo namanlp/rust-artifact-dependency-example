@@ -2,7 +2,7 @@ use libhello;
 
 use rand::prelude::*;
 
-
+// For printing as Cargo warnings
 macro_rules! p {
     ($($tokens: tt)*) => {
         println!("cargo::warning={}", format!($($tokens)*))
