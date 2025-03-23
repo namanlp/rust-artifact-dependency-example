@@ -1,10 +1,11 @@
-pub fn add(left: u64, right: u64) -> u64 {
+pub fn add(left: usize, right: usize) -> usize {
     unsafe {say_hello();}
-    left + right
+    unsafe {adding_num(left, right)}
 }
 
 unsafe extern "C" {
     fn say_hello();
+    pub fn adding_num(a:usize, b:usize) -> usize;
 }
 
 #[cfg(test)]

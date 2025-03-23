@@ -3,5 +3,8 @@ name = "rust_app"
 version = "0.1.0"
 edition = "2024"
 
+[build-dependencies]
+libhello = { path = "../libhello", artifact="bin", lib = true}
+
 [dependencies]
 libhello = { path = "../libhello"}
